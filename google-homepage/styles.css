@@ -1,0 +1,44 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    width: 20%;
+}
+
+.search {
+    display: block;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 34%;
+    border-radius: 12px;
+    padding: 12px;
+    outline: 0;
+    transition: box-shadow .3s;
+}
+
+.search:hover {
+    box-shadow: 0 0 5px rgba(33,33,33,.2);
+}
+
+.text-center {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+.button {
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 4px 12px;
+    margin-right: 5px;
+}
