@@ -21,10 +21,6 @@ li a {
     text-decoration: none;
 }
 
-.right {
-    text-align: right;
-}
-
 a:hover {
     text-decoration: underline;
 }
