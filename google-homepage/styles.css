@@ -21,6 +21,16 @@ li a {
     text-decoration: none;
 }
 
+.app-item {
+    color: black;
+    opacity: .75;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -55,7 +65,7 @@ input[type=submit] {
     margin: 0 auto;
     margin-top: 20px;
     height: 44px;
-    width: 482px;
+    width: 570px;
     border-radius: 24px;
     padding: 12px;
     outline: 0;
@@ -84,4 +94,52 @@ input[type=submit] {
     cursor: pointer;
     padding: 4px 12px;
     margin-right: 5px;
+}
+
+.app-item {
+    position: relative;
+    margin-left: -5%;
+    align-items: center;
+}
+
+.sign-in-button {
+    color: #fffffd;
+    background-color: #4285f4;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    height: 30px;
+    min-width: 80px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 5%;
+    width: 100%;
+    background-color: #f2f2f2;
+    color: #5f6368;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-footer {
+    text-align: left;
+}
+
+.right-footer {
+    text-align: right;
+}
+
+span a {
+    text-decoration: none;
+    color: #5f6368;
+    font-family: arial, sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
 }
