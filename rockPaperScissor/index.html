@@ -6,17 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="outer-box centered">
-        <h1>Rock, Paper, or Scissor</h1>
-        <div class="buttons">
-            <button class="rock" type="button">Rock</button>
-            <button class="paper" type="button">Paper</button>
-            <button class="scissor" type="button">Scissor</button>
+    <div class="container">
+        <h1 class="text-center pt-4 mb-4">Rock, Paper, or Scissor</h1>
+        <div class="card-deck">
+            <div class="card">
+                <img src="./img/rock.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                </div>
+                <div class="card-footer">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-secondary btn-lg active" id="rock">Rock</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/paper.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                </div>
+                <div class="card-footer">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-secondary btn-lg active" id="paper">Paper</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/scissor.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                </div>
+                <div class="card-footer">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-secondary btn-lg active" id="scissor">Scissor</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center pt-4 mb-4" id="statusUpdate"></h2>
+        <div class="row">
+            <div class="col">
+                <h2 class="text-left pt-4 mb-4">Your Score:</h2>
+            </div>
+            <div class="col">
+                <h2 class="text-right pt-4 mb-4" id="playerScore"></h2>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <h2 class="text-left pt-4 mb-4">Computer's Score:</h2>
+            </div>
+            <div class="col">
+                <h2 class="text-right pt-4 mb-4" id="computerScore"></h2>
+            </div>
         </div>
     </div>
-<!-- <script src="script.js"></script>     -->  
+<script src="script.js"></script>      
 </body>
 </html>

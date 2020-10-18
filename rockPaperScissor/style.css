@@ -1,12 +1,33 @@
-div.outer-box{
+/* div.outer-box{
     width: 300px;
     border: 15px solid green;
     padding: 50px;
     margin: 20px;
-}
+} */
 
-.centered {
-    position: fixed; /* or absolute */
+/* .centered {
+    position: fixed;
     top: 50%;
     left: 50%;
-}
+    /* bring your own prefixes */
+    /* transform: translate(-50%, -50%); */
+/* } */ 
+
+/* .game-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10em;
+    width: 11em;
+    background-color: #5cdb95;
+    border: 3px solid #05386b;
+    border-radius: 15px;
+    box-shadow:  -11px -11px 15px #327650, 11px 11px 15px #86ffda;
+} */
+
+/* .game-title{
+    margin-top: 25px;
+    font-size: 50px;
+    font-weight: 650;
+    color: #05386b;
+} */
