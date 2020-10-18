@@ -3,32 +3,25 @@ let computerWinCount = 0;
 let tieCount = 0;
 let playerSelection;
 let computerSelection;
-let play = false;
 
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissor = document.getElementById("scissor");
 
 rock.addEventListener("click", () => {
-    play = true;
     playerSelection = "rock";
-    console.log("button clicked");
-    //playRound();
+    playRound();
 })
 
 paper.addEventListener("click", () => {
     playerSelection = "paper";
-    //playRound();
+    playRound();
 })
 
 scissor.addEventListener("click", () => {
     playerSelection = "scissor";
-    //playRound();
-})
-
-if (play) {
     playRound();
-}
+})
 
 const playRound = () => {
     computerPlay();
