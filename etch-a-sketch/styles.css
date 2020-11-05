@@ -1,0 +1,33 @@
+#container {
+    display: grid;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.square {
+    background: white;
+    outline: 1px solid black;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 0;
+    cursor: pointer;
+    float: left;
+}
+
+.square:hover {
+    background-color: black;
+}
+
+.black {
+    background-color: black;
+}
+
+.row {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
