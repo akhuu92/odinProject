@@ -1,7 +1,42 @@
+body {
+    margin: 0;
+    background-color: rgb(178, 221, 247);
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    padding-top: 2rem;
+    text-align: center;
+    float: right;
+}
+
 #container {
     display: grid;
     justify-content: center;
-    margin-top: 5%;
+    flex: 1;
+}
+
+#grid-size {
+    font-size: 16px;
+}
+
+
+
+.btn {
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
 }
 
 .square {
@@ -13,10 +48,6 @@
     margin-top: 0;
     cursor: pointer;
     float: left;
-}
-
-.square:hover {
-    background-color: black;
 }
 
 .black {

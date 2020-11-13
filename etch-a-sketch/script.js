@@ -1,15 +1,16 @@
 // Grab container div
 const container = document.querySelector("#container");
+let value = 16;
 
 // Create 16x16 square divs
-const createSquares = () => {
+const createSquares = (value) => {
     // Create 16 rows
-    for (let i = 1; i <= 16; i++) {
+    for (let i = 1; i <= value; i++) {
         let row = document.createElement("div");
         row.classList.add("row");
 
         // Create 16 squares in a row
-        for (let j = 1; j <= 16; j++) {
+        for (let j = 1; j <= value; j++) {
             let square = document.createElement("div");
             square.classList.add("square");
             square.id = i + "-" + j;
@@ -34,10 +35,18 @@ const reset = () => {
     };
 }
 
-const undo = () => {
-    let board = document.getElementsByClassName("black");
-    board[0].classList.remove("black");
+const recreateGrid = () => {
+    // Grab all divs with class: square then delete all divs with class: square
+    let rowDiv = document.getElementsByClassName("row");
+    while (rowDiv[0]) {
+        rowDiv[0].parentNode.removeChild(rowDiv[0]);
+    };
+    // Recreate grid
+    
+    let newValue = document.getElementById("grid-size").value;
+    console.log(newValue)
+    createSquares(newValue);
+    event.preventDefault();
 }
 
-
-createSquares();
+createSquares(value);
