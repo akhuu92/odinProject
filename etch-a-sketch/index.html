@@ -7,10 +7,17 @@
     <title>Etch-A-Sketch</title>
 </head>
 <body>
-    <div id="container">
-        <h1>Etch-A-Sketch</h1>
+    <div class="flex-container">
+        <div class="info">
+            <form onsubmit="recreateGrid()">
+                Grid Size: <input type="text" id="grid-size"/>
+            </form>
+            <button type="button" class="btn" id="reset" onclick="reset()">Clear</button>
+        </div>
+        <div id="container">
+            <h1>Etch-A-Sketch</h1>
+        </div>
     </div>
-    <button type="button">Reset</button>
     <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
