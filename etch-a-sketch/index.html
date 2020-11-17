@@ -3,21 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/b46fc6ae41.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="flex-container">
-        <div class="info">
-            <form onsubmit="recreateGrid()">
-                Grid Size: <input type="text" id="grid-size"/>
-            </form>
-            <button type="button" class="btn" id="reset" onclick="reset()">Clear</button>
+    <section id="sidebar">
+        <div class="title-container">
+            <h1>Etch-A-Sketch</h2>
         </div>
+        <div class="items-container">
+            <div class="items">
+                <div class="icon">
+                    <i class="fas fa-recycle"></i>
+                </div>
+                <!-- <span>Reset</span> -->
+                <button onclick="reset()">Reset</button>
+            </div>
+            <div class="items">
+                <div class="icon">
+                    <i class="fas fa-th"></i>
+                </div>
+                <span>Grid Size: </span>
+                <form onsubmit="recreateGrid()">
+                    <input type="number" min="1" max="30" id="grid-size-input" placeholder="16"/>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="main-dashboard-content">
         <div id="container">
             <h1>Etch-A-Sketch</h1>
         </div>
-    </div>
+    </section>
     <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
