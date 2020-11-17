@@ -24,11 +24,10 @@ const createSquares = (value) => {
 }
 
 const changeColor = (e) => {
-    console.log(e.target.id);
     document.getElementById(e.target.id).classList.add("black");
 }
 
-const reset = () => {
+const reset = (e) => {
     let board = document.getElementsByClassName("black");
     while (board.length > 0) {
         board[0].classList.remove("black");
@@ -36,17 +35,18 @@ const reset = () => {
 }
 
 const recreateGrid = () => {
+    event.preventDefault();
+    console.log("in");
     // Grab all divs with class: square then delete all divs with class: square
     let rowDiv = document.getElementsByClassName("row");
     while (rowDiv[0]) {
         rowDiv[0].parentNode.removeChild(rowDiv[0]);
     };
     // Recreate grid
-    
-    let newValue = document.getElementById("grid-size").value;
+    let newValue = document.getElementById("grid-size-input").value;
     console.log(newValue)
     createSquares(newValue);
-    event.preventDefault();
+    
 }
 
 createSquares(value);
