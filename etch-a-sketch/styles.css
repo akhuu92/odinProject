@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-html,
+html, 
 body {
     height: 100%;
 }
@@ -112,4 +112,13 @@ button:hover {
 
 .black {
     background-color: black;
+}
+
+@media (max-width: 1100px) {
+    #sidebar {
+        display: none;
+    }
+    #main-dashboard-content {
+        margin-left: 0;
+    }
 }
